@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat"),
+       url("fonts/Montserrat-Medium.woff2") format("woff2"),
+       url("fonts/Montserrat-Medium.woff") format("woff");
+       font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  background: #FAEBD7;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat, 'Times New Roman', Times, serif;
+}
+
+.container {
+  width: 100%;
+  display: flex; 
+  padding: 0 20px;
+}
+
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  color: aliceblue;
+  cursor: pointer;
+  flex: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.title {
+  position: absolute;
+  margin: 0;
+  font-size: 24px;
+  bottom: 20px;
+  left: 20px;
+  opacity: 0;
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active .title {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
