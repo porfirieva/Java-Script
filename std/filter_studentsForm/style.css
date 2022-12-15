@@ -1,0 +1,45 @@
+form {
+  padding: 30px 0;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+span {
+  position: absolute;
+  bottom: -15px;
+  color: red;
+  font-size: 6px;
+}
+
+.table-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+p {
+  height: 30px;
+  font-size: 12px;
+}
+
+.filters input {
+  margin-right: 10px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.filters .form-group {
+  margin-bottom: 0;
+}
+
+#facultyName,
+#name,
+#age,
+#studies {
+  cursor: pointer
+}

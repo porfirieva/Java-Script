@@ -29,18 +29,18 @@ function parseEmployeesData(datastring) {
 }
 
 // 2) Найти на странице ссылки и получить тольок доменные имена
-function getPageLinkDomains() {
-	return Array.from(document.getElementsByTagName('a'))
-		.map(link =>
-			link.href
-				.replace('http://', '')
-				.replace('https://', '')
-				.replace('www', '')
-				.split('/')
-				.shift()
-		)
-		.reduce((unique, domain) => {
-			if (unique.includes(domain)) return unique;
-			return [...unique, domain];
-		}, []);
-}
+// function getPageLinkDomains() {
+// 	return Array.from(document.getElementsByTagName('a'))
+// 		.map(link =>
+// 			link.href
+// 				.replace('http://', '')
+// 				.replace('https://', '')
+// 				.replace('www', '')
+// 				.split('/')
+// 				.shift()
+// 		)
+// 		.reduce((unique, domain) => {
+// 			if (unique.includes(domain)) return unique;
+// 			return [...unique, domain];
+// 		}, []);
+// }
